@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dekyp's Contact</title>
+  </head>
+  <body>
+    <h3>Sign-in or Login</h3>
+    <form class="" action="mailto:test@test.com" method="post" enctype="text/plain">
+      <label for=""><strong>Sign-in:</strong></label>
+      <br>
+      <label for="">Change text color. <input type="Color"></label>
+      <table border="1">
+        <tr>
+          <td><label for="">Your Name</label></td>
+          <td><input type="text" name="Your Name"></td>
+        </tr>
+        <tr>
+          <td><label for="">Username</label></td>
+          <td><input type="text" name="Your Username"></td>
+        </tr>
+        <tr>
+          <td><label for="">Password</label></td>
+          <td><input type="password" name="Your Password"></td>
+        </tr>
+        <tr>
+          <td><label for="">Re-enter Password</label></td>
+          <td><input type="password"></td>
+        </tr>
+        <tr>
+          <td><label for="">Email Address</label></td>
+          <td><input type="email" name="Your Email"></td>
+        </tr>
+        <tr>
+          <td><label for="">Date of Birth</label></td>
+          <td><input type="date" name="Your Date of Birth"></td>
+        </tr>
+        <tr>
+          <td><label for="">Select Profile Picture</label></td>
+          <td><input type="file" name="Your Profile Picture"></td>
+        </tr>
+        <tr>
+          <td><label for="">Telephone</label></td>
+          <td><input type="tel" name="Your Telephone Numbers"></td>
+        </tr>
+      </table>
+      <br>
+      <label for="">Your Bio:</label>
+      <br>
+      <textarea name="Your Bio" rows="10" cols="30"></textarea>
+      <br>
+      <label for="">Do you love music? [Yes.<input type="radio" name="You love music." value="">]   [No.<input type="radio" name="You dislike music" value="">]</label>
+      <br>
+      <label for="">Your score for this webite? <input type="range" name="Your score for this website" value=""></label>
+      <br><br>
+      <label for="">I agree with The Terms and Conditions. <input type="checkbox" name="You are agree with the terms and conditions" value=""></label>
+      <br><br>
+      <input type="submit">
+    </form>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <form class="" action="message.html" method="post" enctype="text/plain">
+      <label for=""><strong>Login:</strong></label>
+      <br>
+      <table border="1">
+        <tr>
+          <td><label for="">Username or Email</label></td>
+          <td><input type="text" type="email" name="Your Username"></td>
+        </tr>
+        <tr>
+          <td><label for="">Password</label></td>
+          <td><input type="password" name="Your Password"></td>
+        </tr>
+      </table>
+      <br>
+      <input type="submit">
+<!--untuk membuat suatu client yang mengakses website kita mengirimi pesan ke kita melalui website milik kita secara langsung, atau ingin membuat survey dengan menginputkan data-data menggunakan suatu online form, atau meminta identitas nama dan password, kita bisa mempergunakan <form>...</form> atau form tag untuk membuatnya. Tapi tag form ini tidak akan bekerja tanpa adanya <label>...</label> (sepertinya bisa bekerja tanpa label, dengan menggunakan format text deskripsi lainnya) dan <input>.
+tag label berfungsi untuk menampilkan label atau tulisan penjelas terkait suatu inputan, dan tag input digunakan sebagai tempat untuk menginput saatu text, checkbox, tombol submit dsb. Gunakan fitur auto suggest agar mempermudah dalam pengerjaan tag form atau tag-tag lainnya-->
+<!--cara kerja dari form tag akan kita amati setelah CSS dan JS.-->
+<!--banyak yang dapat kita pilih pada attribute type di <input>. untuk lebih detilnya cek di reference di mdn input.-->
+<!--attribute action pada tag form merupakan suatu tindakan yang akan terjadi ketika kita telah men-submit form. Jadi jika action-nya adalah index.html, maka page akan berada di index.html dar yang sebelumna berada di contact.html. Kita dapat mengganti action tersebut dengan tindakan lainnya tanpa memerlukan bantuan JS. Contohnya seperti diatas, dimana "mailto" digunakan untuk mengirimkan text yang sudah diinput ke aplikasi email dengan tujuan email pada "mailto" secara otomatis. disini text akan muncul di aplikasi email dengan format tidak plain text, untuk itu kita perlu menambahkan attribut baru yaitu "enctype" atau encryption type lalu pilih dengan format plain/text.-->
+<!--pada tag input, terdapat attribute name yang berfungsi untuk menjelaskan data atau mengklasifikasikan data yang diinput. jadi jika inputan untuk umur, kita bisa memberi data di attribute name dengan Umur atau Old dsb.-->
+<!--dengan memberi attribute type "email", maka ketika kita menginputkan suatu tulisan di kolom email-nya, harus mengikuti format email yang berlaku, tapi tergantung w yang digunakan juga. disini browser juga tidak mampu memvalidasi suatu email, apakah email yang diinputkan adalah email valid atau tidak-->
+  </body>
+  <br><br><br>
+  <a href="contact.html"><<< Back to the Contact Me.</a>
+</html>

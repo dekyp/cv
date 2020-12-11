@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--mendeklarasi tipe dokumen, dalam hal ini HTML 5 document. tipe 4 lebih panjang (test html 4? tinggal ketik html:4t, kalo udah instal image-nya)-->
+<!-- jika sudah ada image-nya, tinggal enter untuk memunculkan image yang dimaksud (auto complete)-->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <!--<meta />, untuk menambah metadata extra ke dokumen html dalam kasus ini menambah charset. Penggunaan HTML Element meta dengan Attribute nya name, dengan isian Description, digunakan untuk menampilkan sebagian teks di search engine kita, detil cek di dokumentasi. isian di name bisa bermacam-macam, seperti nama author, waktu, dsb-->
+  <!--charset (HTML attribute <meta>), character set digunakan untuk mendefinisikan encode yang dipergunakan, dalam hal ini meng-encode dengan utf-8-->
+  <!-- sangat penting untuk men-encode suatu konteks dengan enkode yang tepat, apabila tidak tepat maka konteks yang ingin kita baca tidak dapat terbaca dengan baik karena kesalahan encode (mojibake) dalam hal ini browser me-render character set yang salah. umumnya terjadi pada internet explorer versi lama. Ada banyak tipe enkoding, dimana tiap bahasa tentunya memiliki simbol huruf yang berbeda-beda. Direkomendasikan mempergunakan utf-8 atau unicode karena berisi semua simbol-simbol di dunia. Dengan utf-8 kita bisa menampilkan simbol-simbol seperti hati dsb.-->
+  <!--emoji shortcut, WIN + . -->
+  <title>✵Dekyp's Personal Site</title>
+  <!--ngasi judul di tab kaena berada di <head>...</head>-->
+</head>
+
+<body>
+  <!--dalam style attribute, si background-color merupakan properti CSS. berguna untuk mengubah warna backround dalam hal ini dalam tag body. untuk pemilihan warna, bisa mempergunakan tulisan dalam bhs inggris amerika atau dengan bilangan hex. lebih detil bisa cek di mdn.-->
+  <table cellspacing="20">
+    <tr>
+      <td>
+        <img src="https://yt3.ggpht.com/ytc/AAUvwnh2KuPMoIxm9TZTbA8ph18LU2KC5RftOZ_VheY=s88-c-k-c0x00ffffff-no-rj" alt="deky's Profile Image in Youtube"> <!--url gambar pada src di sintaks ini, artinya melaukan ping ke yt3.ggpht.com (youtube) untuk meminta gambar dengan alamat tersebut, dan apabila diijinkan maka gambar tersebut akan didownload kemudian ditampilkan di halaman website kita. Namun apabila youtube down atau tidak dapat permision untuk mengambil gambar, maka gambar tidak akan muncul. untuk itu kita dapat mengambil gambar dari directory menggunakan path.-->
+        <img src="images/photo-1606462531602-29f689431baf.jpg" alt="Dekyp's downloaded image from internet" height="88" width="132">
+        <!--image atau <img>, meskipun self-closing tag tapi tidak mampu berfungsi apabila tidak ada attribute source AAUvwnh2KuPMoIxm9TZTbA8ph18LU2KC5RftOZ_VheY src-nya. <img> sendiri berfungsi untuk menampilkan gambar dari source atau src atau direktori atu folder yang sama dengan file html (levelnya sama) (atau bisa juga gunakan new path dengan membuat folder baru, tapi syaratnya folder tersebut harus satu level dengan file html) yang akan digunakan atau dengan mempergunakan url dari internet. selain attribute src pada <img> yang muncul secara otomatis, attribute alt atau alternative text diguanakan untuk menjelaskan gambar yang dimaksudkan untuk diperlihatkan apabila gambar yang ditambil gagal dimuat pada website. pencarian gambar menggunakan google juga dicari berdasarkan alternative text ini.-->
+      </td>
+      <td>
+        <h1>Dekyp</h1>
+        <p>Trying to be <em><strong><a href="https://www.ldoceonline.com/dictionary/attractive">Attractive</a></strong></em> and <em><strong><a href="https://www.merriam-webster.com/dictionary/proactive">Proactive</a>.</strong></em>😄😄😄</p><!-- pharagraph--><!--cara italic? yaitu dengan <i>...</i> (italic. untuk men-style garis miring dan hanya untuk styling) atau <em>...</em>(emphasis. tidak sekedar men-style garis miring tapi dengan maksud menekankan. ini lebih direkomendasikan untuk dipergunakan)-->
+      <!--untuk bold, bisa mempergunakan <b>....</b>(bold. untuk styling saja) atau <strong>....</strong>(tidak sekedar mem-bold untuk style tapi dengan maksud merupakan kepentingan yang kuat. ini lebih direkomendasikan)-->
+      <!--kenapa style kurang direkomendasikan? karena menunjukan sesuatu yang bermakna, khsusnya pada kata-kata penting untuk dipahami (dengan tujuan agar struktur baik). gunakan style, apabila kata-kata tersebut hanya untuk styling-->
+      <!--<a href="#"></a> atau anchore tag digunakan untuk meng-hyperlink suatu text menuju situs lainnya. tag ini membutuhkan attribute berupa tambahan href, yang merupakan hyperlink reference yang mengarahkan kita ke link yang ditujukan.-->
+      <!--apabila kita ingin meng-hyperlink ke situs kita sendiri, maka kita perlu membuat file .html baru (atau jika sudah ada bisa dipakai). Pastikan file .html tersebut berada pada level yang sama dengan situs yang dikaitkan agar terlihat lebih rapi atau terserah.-->
+      </td>
+    </tr>
+  </table>
+    <br>
+    <p>A student in Electrical Engineering who tries to be a Web Developer 😊😊.</p>
+    <hr>
+  <h3>Education</h3>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>No.</th>
+        <th>Name of Books</th>
+        <th>Author</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Engineering Electromagnetics</td>
+        <td><ul>
+            <li>Nathan Ida</li>
+        </td></ul>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Calculus 9th Edition</td>
+        <td><ol type="i">
+              <li>Verberg</li>
+              <li>Purcell</li>
+              <li>Rigdon</li>
+        </td></ol>
+      </tr>
+        <td>3</td>
+        <td>Awaken the Giant Within</td>
+        <td><ol type="1">
+              <li>Anthony Robbins</li>
+        </td></ol>
+      <tr>
+        <td>4</td>
+        <td>The Secret</td>
+        <td ><ol type="I">
+              <li>Rhonda Byrne</li>
+        </td></ol>
+      </tr>
+    </tbody>
+  </table>
+<!--untuk ngelist tidak berurutan bisa mempergunakan <ul>...</ul> atau disebut unordered list, untuk yang berurutan gunakan <ol>...</ol> atau disebut ordered list-->
+<!--ditengah-tengan unordered atau ordered list, tentunya berisi list-list item yang akan ditampilkan dengan rapi. item-item yang akan dilist perlu mempergunakan tag <li>...</li> atau list item agar dapat terlistkan dengan benar-->
+<!--ingat!! gunakan fitur html attribute pada tag, untuk menambah kesan kerennya. pada tag <ul>...</ul>, tidak bisa mempergunakan html attribute type, sedangkan tag <ol>...</ol> bisa. untuk melihat lebih detil attribute yang dapat digunakan di tiap tagnya, tinggal tekan spasi di dalam tag.-->
+<!--agar terlihat rapi, kita dapat mempergunakan <table>...</table> untuk membuat table, namun kita juga perlu menginput isian dalam 1 baris bersaf yaitu <tr>...</tr> atau table row, dan di table row kita perlu menambahkan table data atau <td>..</td> untuk mengisi baris bersaf. sama seperti table data, kita juga menambahkan <th>...</th> atau table header cell untuk mengisi data di table row, namun karena ini tag ini bersifat header, maka akan tampil dengan bold seperti halnya header-header pada umumnya-->
+<!--sebenarnya tanpa mempergunakan <thead>...</thead>, <tbody>...</tbody>, dan <tfoot>...</tfoot>, namun untuk meningkatkan dalam hal seni atau style maka kita perlu menginputkannya. Styles ini akan dipelajari nanti ketika di CSS dan JS.-->
+<!--untuk mempercantik table, seperti menambahkan border, warna, dsb itu bisa dilakukan di html. namun mendesain mempergunakan HTML adalah hal yang tidak direkomendasikan karena dicap depricated atau usang. Untuk itu lebih direkomendasikan mempergunakan CSS dan JS.-->
+<!--untuk menambahkan border pada table menggunakan html, maka kita perlu menambahkan attribute ke tag table (bukan tbody, th, td, dan td karena mereka adalah bagian dari table). attribute nya adalah border dengan ukuran dalam pixel.-->
+<!--untuk merenggangkan tabel, gunakan cellspacing attribute.-->
+  <hr>
+  <h3>Skills</h3>
+  <table cellspacing="20">
+    <tr>
+      <td><!--KIRI-->
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Hard Skills</th>
+              <th>Level</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Micosoft Word</td>
+              <td>★★★★★</td>
+            </tr>
+            <tr>
+              <td>Microsoft Excel</td>
+              <td>★★☆☆☆</td>
+            </tr>
+            <tr>
+              <td>Microsoft Power Point</td>
+              <td>★★★☆☆</td>
+            </tr>
+            <tr>
+              <td>HTML</td>
+              <td>★★☆☆☆</td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+<!----------------------------------------------->
+      <td><!--KANAN-->
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Soft Skills</th>
+              <th>Level</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Creativity</td>
+              <td>★★★★★</td>
+            </tr>
+            <tr>
+              <td>Communication</td>
+              <td>★★☆☆☆</td>
+            </tr>
+            <tr>
+              <td>Quick Learning</td>
+              <td>★★★☆☆</td>
+            </tr>
+            <tr>
+              <td>Interpersonal Skills</td>
+              <td>★★☆☆☆</td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </table>
+    <hr>
+    <h3><a href="hobbies.html">Hobbies</a></h3>
+    <h3><a href="contact.html">Contact Me</a></h3>
+</body>
+
+</html>
